@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_todo">
+
+    <fragment
+        android:id="@+id/nav_todo"
+        android:name="com.medac.eschef.ui.todo.TodoFragment"
+        android:label="@string/menu_todo"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_nav_todo_to_nav_carnes"
+            app:destination="@id/nav_carnes" />
+        <action
+            android:id="@+id/action_nav_todo_to_recetaFragment"
+            app:destination="@id/recetaFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_nav_todo_to_nav_pescados"
+            app:destination="@id/nav_pescados" />
+        <action
+            android:id="@+id/action_nav_todo_to_pastaFragment"
+            app:destination="@id/nav_pasta" />
+        <action
+            android:id="@+id/action_nav_todo_to_recetaFragmentBombones"
+            app:destination="@id/recetaFragmentBombones" />
+        <action
+            android:id="@+id/action_nav_todo_to_recetaFragmentAngulas"
+            app:destination="@id/recetaFragmentAngulas" />
+        <action
+            android:id="@+id/action_nav_todo_to_recetaFragmentEspaguetis"
+            app:destination="@id/Espaguetis" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_carnes"
+        android:name="com.medac.eschef.ui.carne.CarneFragment"
+        android:label="@string/menu_carnes"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_carnes_to_nav_todo"
+            app:destination="@id/nav_todo" />
+        <action
+            android:id="@+id/action_nav_carnes_to_nav_pescados"
+            app:destination="@id/nav_pescados" />
+        <action
+            android:id="@+id/action_nav_carnes_to_pastaFragment"
+            app:destination="@id/nav_pasta" />
+        <action
+            android:id="@+id/action_nav_carnes_to_recetaFragment"
+            app:destination="@id/recetaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pescados"
+        android:name="com.medac.eschef.ui.pescado.PescadoFragment"
+        android:label="@string/menu_pescados"
+        tools:layout="@layout/fragment_pescado">
+        <action
+            android:id="@+id/action_nav_natural_to_nav_carnes"
+            app:destination="@id/nav_carnes" />
+        <action
+            android:id="@+id/action_nav_pescados_to_nav_todo"
+            app:destination="@id/nav_todo" />
+        <action
+            android:id="@+id/action_nav_pescados_to_pastaFragment"
+            app:destination="@id/nav_pasta" />
+        <action
+            android:id="@+id/action_nav_pescados_to_recetaFragmentAngulas"
+            app:destination="@id/recetaFragmentAngulas" />
+    </fragment>
+    <fragment
+        android:id="@+id/recetaFragment"
+        android:name="com.medac.eschef.RecetaFragment"
+        android:label="@string/Solomillo"
+        tools:layout="@layout/fragment_receta" />
+    <fragment
+        android:id="@+id/nav_postre"
+        android:name="com.medac.eschef.ui.PostreFragment"
+        android:label="@string/menu_postres"
+        tools:layout="@layout/fragment_postre">
+        <action
+            android:id="@+id/action_postreFragment_to_nav_pescados"
+            app:destination="@id/nav_pescados" />
+        <action
+            android:id="@+id/action_postreFragment_to_nav_carnes"
+            app:destination="@id/nav_carnes" />
+        <action
+            android:id="@+id/action_postreFragment_to_nav_todo"
+            app:destination="@id/nav_todo" />
+        <action
+            android:id="@+id/action_nav_postres_to_pastaFragment"
+            app:destination="@id/nav_pasta" />
+        <action
+            android:id="@+id/action_nav_postre_to_recetaFragmentBombones"
+            app:destination="@id/recetaFragmentBombones" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pasta"
+        android:name="com.medac.eschef.ui.PastaFragment"
+        android:label="@string/menu_pastas"
+        tools:layout="@layout/fragment_pasta">
+        <action
+            android:id="@+id/action_pastaFragment_to_nav_carnes"
+            app:destination="@id/nav_carnes" />
+        <action
+            android:id="@+id/action_pastaFragment_to_nav_pescados"
+            app:destination="@id/nav_pescados" />
+        <action
+            android:id="@+id/action_pastaFragment_to_nav_todo"
+            app:destination="@id/nav_todo" />
+        <action
+            android:id="@+id/action_nav_pasta_to_recetaFragmentEspaguetis"
+            app:destination="@id/Espaguetis" />
+    </fragment>
+    <fragment
+        android:id="@+id/recetaFragmentBombones"
+        android:name="com.medac.eschef.RecetaFragmentBombones"
+        android:label="@string/BombonesW" />
+    <fragment
+        android:id="@+id/recetaFragmentAngulas"
+        android:name="com.medac.eschef.RecetaFragmentAngulas"
+        android:label="@string/Angulas" />
+    <fragment
+        android:id="@+id/Espaguetis"
+        android:name="com.medac.eschef.RecetaFragmentEspaguetis"
+        android:label="@string/Espaguetis" />
+</navigation>

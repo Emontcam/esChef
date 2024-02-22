@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecetaFragment" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="440dp"
+        android:layout_height="249dp"
+        android:src="@drawable/espaguetis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/claro"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mada_black"
+                    android:text="@string/Espaguetis"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAlergeno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="@string/gluten"
+                        android:textAppearance="@style/estiloChip"
+                        android:textColor="@color/white"
+                        android:visibility="visible"
+                        app:chipBackgroundColor="@color/rojo"
+                        app:chipIcon="@drawable/gluten"
+                        app:chipIconTint="@color/claro" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAlergeno4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="@string/Leche"
+                        android:textAppearance="@style/estiloChip"
+                        android:textColor="@color/white"
+                        android:visibility="visible"
+                        app:chipBackgroundColor="@color/rojo"
+                        app:chipIcon="@drawable/leche"
+                        app:chipIconTint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipTipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mada_black"
+                        android:includeFontPadding="false"
+                        android:text="@string/menu_postres"
+                        android:textColor="@color/white"
+                        android:visibility="visible"
+                        app:chipBackgroundColor="@color/naranja"
+                        app:chipIconSize="18dp"
+                        app:chipIconTint="#FFFFFF"
+                        app:iconEndPadding="5dp"
+                        app:iconStartPadding="10dp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:background="#00FFFFFF"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/mada_black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:text="@string/cuarenta"
+                        android:textColor="@color/verde"
+                        android:textIsSelectable="false"
+                        app:icon="@drawable/reloj"
+                        app:iconTint="@color/verde" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="10"
+                        android:orientation="vertical"
+                        android:outlineProvider="none"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/ingredientesTitulo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/mada_black"
+                            android:gravity="center"
+                            android:text="@string/ingredientes"
+                            android:textColor="@color/oscuro"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ingredientes1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mada_medium"
+                            android:text="@string/ingEspaguetis"
+                            android:textColor="@color/oscuro"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="10"
+                        android:orientation="vertical"
+                        android:outlineProvider="none"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/ingredientesTitulo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/mada_black"
+                            android:gravity="center"
+                            android:text="@string/preparacion"
+                            android:textColor="@color/oscuro"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ingredientes2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mada_medium"
+                            android:text="@string/prepEspaguetis"
+                            android:textColor="@color/oscuro"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

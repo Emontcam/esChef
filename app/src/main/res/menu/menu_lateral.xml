@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/comida"
+            android:title="@string/menu_todo" />
+        <item
+            android:id="@+id/nav_carnes"
+            android:icon="@drawable/carne"
+            android:title="@string/menu_carnes" />
+        <item
+            android:id="@+id/nav_pescados"
+            android:icon="@drawable/pescado"
+            android:title="@string/menu_pescados" />
+        <item
+            android:id="@+id/nav_pasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/cacahuetes"
+            android:title="@string/menu_pastas" />
+        <item
+            android:id="@+id/nav_postre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/tarta"
+            android:title="@string/menu_postres" />
+
+    </group>
+</menu>

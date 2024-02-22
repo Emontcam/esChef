@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PastaFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjetaReceta1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/espaguetis"
+                    android:gravity="bottom|right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparente"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mada_black"
+                            android:text="@string/Espaguetis"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAlergeno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0"
+                                android:text="@string/Cacahuetes"
+                                android:textAppearance="@style/estiloChip"
+                                android:textColor="@color/white"
+                                app:chipBackgroundColor="@color/rojo"
+                                app:chipIcon="@drawable/cacahuete_icon" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAlergeno2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:text="@string/Leche"
+                                android:textAppearance="@style/estiloChip"
+                                android:textColor="@color/white"
+                                android:visibility="visible"
+                                app:chipBackgroundColor="@color/rojo"
+                                app:chipIcon="@drawable/leche"
+                                app:chipIconTint="@color/white" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/categoria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/mada_medium"
+                            android:text="@string/menu_pastas"
+                            app:cornerRadius="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjetaReceta2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/espaguetis"
+                    android:gravity="bottom|right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparente"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mada_black"
+                            android:text="@string/Espaguetis"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAlergeno3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:text="@string/gluten"
+                                android:textAppearance="@style/estiloChip"
+                                android:textColor="@color/white"
+                                android:visibility="visible"
+                                app:chipBackgroundColor="@color/rojo"
+                                app:chipIcon="@drawable/gluten"
+                                app:chipIconTint="@color/claro" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAlergeno17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:text="@string/Leche"
+                                android:textAppearance="@style/estiloChip"
+                                android:textColor="@color/white"
+                                android:visibility="visible"
+                                app:chipBackgroundColor="@color/rojo"
+                                app:chipIcon="@drawable/leche"
+                                app:chipIconTint="@color/white" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/categoria2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/mada_medium"
+                            android:text="@string/menu_pastas"
+                            app:cornerRadius="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjetaReceta6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/espaguetis"
+                    android:gravity="bottom|right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparente"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mada_black"
+                            android:text="@string/Espaguetis"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAlergeno11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:text="@string/gluten"
+                                android:textAppearance="@style/estiloChip"
+                                android:textColor="@color/white"
+                                android:visibility="visible"
+                                app:chipBackgroundColor="@color/rojo"
+                                app:chipIcon="@drawable/gluten"
+                                app:chipIconTint="@color/claro" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAlergeno12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:text="@string/Leche"
+                                android:textAppearance="@style/estiloChip"
+                                android:textColor="@color/white"
+                                android:visibility="visible"
+                                app:chipBackgroundColor="@color/rojo"
+                                app:chipIcon="@drawable/leche"
+                                app:chipIconTint="@color/white" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/categoria6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/mada_medium"
+                            android:text="@string/menu_pastas"
+                            app:cornerRadius="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

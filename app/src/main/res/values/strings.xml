@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">esChef</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--menu-->
+    <string name="menu_todo">TODO</string>
+    <string name="menu_carnes">CARNE</string>
+    <string name="menu_pastas">PASTA</string>
+    <string name="menu_pescados">PESCADO</string>
+    <string name="menu_verduras">VERDURA</string>
+    <string name="menu_postres">POSTRES</string>
+    <string name="menu_hp">ESPECIAL HARRY POTTER</string>
+
+    <string name="leyenda">▫️ LEYENDA ▫️ </string>
+    <string name="alergeneos">🟥 ALÉRGENOS</string>
+    <string name="tiempo">🟩 DURACION</string>
+    <string name="tipo">🟧 TIPO</string>
+
+    <!--Alérgenos-->
+    <string name="gluten">Gluten</string>
+    <string name="Crustáceos">Crustáceos</string>
+    <string name="Huevos">Huevos</string>
+    <string name="Pescado">Marisco</string>
+    <string name="Cacahuetes">Frutos secos</string>
+    <string name="Soja">Soja</string>
+    <string name="Leche">Lactosa</string>
+    <string name="FrutosSecos">Frutos secos</string>
+    <string name="Apio">Apio</string>
+    <string name="Mostaza">Mostaza</string>
+    <string name="Altramuces">Altramuces</string>
+    <string name="Sesamo">Sésamo</string>
+    <string name="Sulfitos">Sulfitos</string>
+    <string name="Moluscos">Moluscos</string>
+    
+    <!--recetas-->
+
+    <string name="ingredientes">INGREDIENTES</string>
+    <string name="preparacion">PREPARACIÓN</string>
+    <string name="TerneraPlancha">TERNERA A LA PLANCHA</string>
+    <string name="Solomillo">SOLOMILLO A LA PIMIENTA</string>
+
+    <string name="BombonesW">BOMBONES AL WHISKY</string>
+    <string name="Angulas">ANGULAS AL AJO</string>
+    <string name="Espaguetis">ESPAGUETIS CON CALABACINES</string>
+
+    <!--duracion-->
+    <string name="cuarenta">40 mins</string>
+
+    <!--Ingredientes-->
+    <string name="sal">Sal</string>
+    <string name="pimienta">Pimienta</string>
+
+    <!-- NUMEROS: ①②③④⑤⑥⑦⑧⑨ -->
+    <string name="ingSolomillo">▶ 6 solomillos de 200 g cada uno \n\n▶ Cerveza o vino blanco \n\n▶ 120 g de nata líquida\n\n
+        ▶ Pimienta\n\n ▶ Ajos\n\n ▶ Perejil\n\n ▶ Aceite\n\n ▶ Sal a gusto\n\n</string>
+
+    <string name="prepSolomillo">① En una bandeja, coloque los solomillos con sal, pimienta,
+        perejil, ajos y un chorro de aceite. Déjelo unas horas en reposo.
+        \n\n ② A continuación, en la unidad más apropiada, previamente calentada y lista para asar,
+        añada los solomillos y deje que se asen durante 20 minutos aproximadamente.
+        \n\n ③ Seguidamente, riegue los solomillos con vino o cerveza y añada la nata líquida.
+        \n\n ④ Tape la unidad y deje cocer a fuego medio unos segundos.
+    </string>
+
+    <string name="ingBombones">▶ 100 g de mantequilla\n\n▶ 2 tabletas de chocolate para hacer\n\n▶ 150 g de avellanas tostadas.
+    \n\n</string>
+
+    <string name="prepBombones">① Ponga a calentar una unidad de 24-60/2,5 litros, mediada de agua.
+        \n\n ② Trocee las tabletas de chocolate y colóquelas en la bandeja honda de 24 cm.
+        \n\n ③ A continuación,póngala sobre la unidad 24-60 al baño maría y tápela.
+        \n\n ④ Pique las avellanas y, cuando esté derretido el chocolate, añádalas a la vez que la copa de whisky.
+        \n\n ⑤ Remuévalo todo bien y deje cocer durante 10 minutos.
+        \n\n ⑥ Vierta la preparación en moldes adecuados y déjelo enfriar.
+        \n\n ⑦ Después métalo en el frigorifico al menos 30 minutos.
+    </string>
+
+    <string name="ingAngulas">▶ 600 g de angulas\n\n▶ 1 cabeza de ajos pelados a rodajas\n\n▶ 1/2 vaso de aceite de oliva
+    \n\n▶ Sal\n\n▶ 1 guindilla</string>
+
+    <string name="prepAngulas">① En la unidad más apropiada ponga a calentar el aceite y fria los ajos.
+        \n\n ② Añada las angulas rehogándolas un poco.
+        \n\n ③ Eche sal y la guindilla y apague el fuego .
+        \n\n ④ Deje reposar 10 minutos.
+    </string>
+
+    <string name="ingEspaguetis">▶ 500 g de espaguetis\n\n▶ 3 calabacines\n\n▶ 150 g de queso Gruyere rallado
+    \n\n▶ 4 cucharadas de aceite\n\n▶ Unas hojas de hierba buena picada
+</string>
+
+    <string name="prepEspaguetis">① En la unidad más apropiada, fría los calabacines en aceite durante 10 minutos.
+        \n\n ② A continuación, añada los espaguetis ya cocidos y escurridos, y sazone con pimienta molida.
+        \n\n ③ Tape y deje cocer 10 minutos.
+        \n\n ④ Sírvalos con el queso rallado a parte.
+    </string>
+
+
+</resources>

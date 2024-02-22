@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EsChef" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- color para seleccionar por defecto -->
+        <item name="colorPrimary">@color/morado</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- fondo botones -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/gris</item>
+        <!-- icono boton -->
+        <item name="colorOnSecondary">@color/black</item>
+
+
+        <item name="cardViewStyle">@style/tarjetaDatos</item>
+        <item name="android:fontFamily">@font/mada_medium</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

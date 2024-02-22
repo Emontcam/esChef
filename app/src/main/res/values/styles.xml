@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="estiloChip" parent="android:style/TextAppearance">
+        <item name="android:fontFamily">@font/mada_medium</item>
+    </style>
+
+    <style name="estiloIngredientes" parent="android:style/TextAppearance">
+        <item name="android:fontFamily">@font/mada_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:innerRadiusRatio">20</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:background">@drawable/fondo_boton_selecctor</item>
+    </style>
+</resources>
